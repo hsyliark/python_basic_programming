@@ -1,4 +1,4 @@
-Review   
+Review    
 
 USE ezen;    
 CREATE TABLE if NOT EXISTS address_book (
