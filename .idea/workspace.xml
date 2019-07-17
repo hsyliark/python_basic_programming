@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d692f009-ee03-43ac-9fae-27b496fc372b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/과제/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_programming.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/과제/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/과제/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/과제/7월 17일 연습문제.py" beforeDir="false" afterPath="$PROJECT_DIR$/과제/7월 17일 연습문제.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/과제/venv/pyvenv.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="4" />
     <option name="width" value="1065" />
     <option name="height" value="788" />
@@ -134,8 +126,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10239163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
