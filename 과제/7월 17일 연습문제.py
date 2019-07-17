@@ -39,6 +39,7 @@ def wakeup(hour,minute):
         print(hour,':',minute-45)
     else:
         print(hour-1,':',minute+15)
+
 wakeup(hour,minute)
 
 
@@ -47,6 +48,7 @@ wakeup(hour,minute)
 # 세 정수 a, b, c를 입력으로 받아 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오.
 
 aList = list(map(int,input().split()))
+
 def bubble_sort(aList):
     for i in range(0, len(aList) - 1):
         for k in range(i + 1, len(aList)):
@@ -62,9 +64,17 @@ def bubble_sort(aList):
 # 예를 들면, 3**2 + 4**2 = 9 + 16 = 25 = 5**2 이므로 3, 4, 5는 피타고라스 수입니다.
 # a + b + c = 1000 인 피타고라스 수를 구하시오. (답은 한가지 뿐이다.)
 
+import random as rd
 
-
-
+while True:
+    a = rd.randint(1, 1000)
+    b = rd.randint(1, 1000)
+    c = 1000 - a - b
+    if a < b < c and a + b > c and a**2 + b**2 == c**2 :
+        print(a,b,c)
+        break    # answer : 200, 375, 425
+        
+        
 
 ### 반복문
 
@@ -77,6 +87,7 @@ def bubble_sort(aList):
 # x는 테스트 케이스 번호이고 1부터 시작하며, C는 A+B이다.
 
 import random as rd
+
 n = 30
 for i in range(n):
     A = rd.randint(1, 9)
@@ -98,6 +109,27 @@ for i in range(n):
 #              *
 
 import math
+
+# input 5
+n = 5
+for i in range(1, math.ceil(n / 2) + 1):
+    for k in range(4 - i):
+        print(' ', end='')
+    for m in range(2 * i - 1):
+        print('*', end='')
+    for p in range(4 - i):
+        print(' ', end='')
+    print()
+for i in range(0, math.ceil(n / 2) - 1):
+    for s in range(i + 2):
+        print(' ', end='')
+    for t in range(n - 2 - 2 * i):
+        print('*', end='')
+    for u in range(i):
+        print(' ', end='')
+    print()
+
+# input 7
 n = 7
 for i in range(1, math.ceil(n / 2) + 1):
     for k in range(4 - i):
@@ -110,7 +142,26 @@ for i in range(1, math.ceil(n / 2) + 1):
 for i in range(0, math.ceil(n / 2) - 1):
     for s in range(i + 1):
         print(' ', end='')
-    for t in range(5 - 2 * i):
+    for t in range(n - 2 - 2 * i):
+        print('*', end='')
+    for u in range(i):
+        print(' ', end='')
+    print()
+
+# input 9
+n = 9
+for i in range(1, math.ceil(n / 2) + 1):
+    for k in range(5 - i):
+        print(' ', end='')
+    for m in range(2 * i - 1):
+        print('*', end='')
+    for p in range(4 - i):
+        print(' ', end='')
+    print()
+for i in range(0, math.ceil(n / 2) - 1):
+    for s in range(i + 1):
+        print(' ', end='')
+    for t in range(n - 2 - 2 * i):
         print('*', end='')
     for u in range(i):
         print(' ', end='')
@@ -131,7 +182,7 @@ for i in range(0,24):
     if i % 10 == 3:
         sum += 60**2
     else:
-        sum += 0
+        sum += 6*60
 print(sum)
 
 
@@ -158,6 +209,29 @@ print(sum)
 # 28=1+2+4+7+14   # 1,2,4,7,14는 각각 28의 약수.
 # 입력으로 자연수 N을 받고, 출력으로 N 이하의 모든 완전수를 출력하는 코드를 작성하시오.
 
+
+
+
+## Q6
+# 1부터 10까지 자연수를 각각 제곱해 더하면 다음과 같다 (제곱의 합).
+# 1**2 + 2**2 + ... + 10**2 = 385
+# 1부터 10을 먼저 더한 다음에 그 결과를 제곱하면 다음과 같습니다 (합의 제곱).
+# (1 + 2 + ... + 10)**2 = 552 = 3025
+# 따라서 1부터 10까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 3025 - 385 = 2640 이 된다.
+# 입력으로 자연수 N을 받아, 1부터 N까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 얼마인가?
+
+def difference(n):
+    sum1 = 0
+    sum2_1 = 0
+    for i in range(1,n+1):
+        sum1 += i**2
+        sum2_1 += i
+    sum2 = sum2_1**2
+    print(abs(sum2-sum1))
+difference(10)
+difference(20)
+    
+        
 
 
 
