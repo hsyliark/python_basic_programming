@@ -17,7 +17,6 @@ if x == 10:
     print('x에 들어있는 숫자는')
         print('10입니다.')    # unexpected indent error
 
-
 if x == 10:
     print('x에 들어있는 숫자는')
     print('10입니다.')
@@ -191,13 +190,10 @@ print(sum)
 factorial = 1
 for i in range(1,11):
     factorial *= i
-
 nominator = factorial
-
 factorial = 1
 for i in range(1,6):
     factorial *= i
-
 denominator = factorial
 nominator/(denominator**2)
 
@@ -229,7 +225,6 @@ while True:
     count += 1
     if a + b >= 10:
         break
-
 print("Process finished with exit code ",count)
 
 for i in range(100):
@@ -271,13 +266,58 @@ for i in reversed(range(5)):
     print('*')
 
 # bubble sort
-aList = [5,4,21,3,15,2,95,11,43]
-for i in range(0,len(aList)-1):
-    for k in range(i+1,len(aList)):
-        if aList[i] > aList[k]:
-            aList[i], aList[k] = aList[k], aList[i]
+aList = list(map(int,input('숫자를 입력하세요>').split()))
+def bubble_sort(aList):
+    for i in range(0, len(aList) - 1):
+        for k in range(i + 1, len(aList)):
+            if aList[i] > aList[k]: # 부등호 바뀌면 내림차순
+                aList[i], aList[k] = aList[k], aList[i]
+    print(aList)
+print(bubble_sort(aList))
 
-print(aList)
+# FizzBuzz
+for i in range(1,101):
+    if i % 3 == 0 and i % 5 == 0:
+        print('FizzBuzz')
+    elif i % 3 == 0:
+        print('Fizz')
+    elif i % 5 == 0:
+        print('Buzz')
+    else:
+        print(i)
+for i in range(1,101): # code golf
+    print('Fizz'*(i % 3 == 0) + 'Buzz'*(i % 5 == 0) or i)
+
+
+### turtle graphics
+
+import turtle as t
+t.shape('turtle')
+for i in range(5):
+    t.forward(100)
+    t.right(360/5)
+
+n = 6
+t.shape('turtle')
+t.color('red')
+t.begin_fill()
+for i in range(n):
+    t.forward(100)
+    t.right(360 / n)
+t.end_fill()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
