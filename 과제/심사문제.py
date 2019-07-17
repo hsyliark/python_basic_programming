@@ -155,7 +155,7 @@ def mountain(i):
             print(' ', end='')
         for m in range(2 * i - 1):
             print('*', end='')
-        for k in range(4 - i):
+        for p in range(4 - i):
             print(' ', end='')
         print()
 mountain(3)
