@@ -179,10 +179,10 @@ for i in range(0, math.ceil(n / 2) - 1):
 
 sum = 0
 for i in range(0,24):
-    if i % 10 == 3:
-        sum += 60**2
-    else:
-        sum += 6*60
+    for k in range(0,60):
+        appear_3 = str(i) + str(k)
+        if '3' in appear_3:
+            sum += 60
 print(sum)
 
 
@@ -198,7 +198,11 @@ print(sum)
 # 15 = 1, 5
 # 그러므로 이 경우의 답은 0:1개, 1:7개, 2:1개, 3:1개, 4:1개, 5:1개
 
-
+count_dict = dict(zip(map(str,range(0,10)),[0]*9)
+for i in range(1,1001):
+    for k in count_dict:
+        if k in str(i):
+            count_dict[k] += 1
 
 
 
@@ -209,6 +213,14 @@ print(sum)
 # 28=1+2+4+7+14   # 1,2,4,7,14는 각각 28의 약수.
 # 입력으로 자연수 N을 받고, 출력으로 N 이하의 모든 완전수를 출력하는 코드를 작성하시오.
 
+n = int(input())
+for i in range(1, n+1):
+    sum_factor = 0
+    for k in range(1, i):
+        if i % k == 0:
+            sum_factor += k
+    if sum_factor == i:
+        print(sum_factor)
 
 
 
