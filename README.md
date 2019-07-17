@@ -2,6 +2,8 @@
 
 ## Deep Learning, Machine Learning, AI  
 
+### 코드출처 : https://github.com/namjaeyoon, 파이썬 코딩 도장 https://dojang.io
+
 과학기술정보통신부 주관 '빅데이터를 활용한 스마트데이터 전문가 양성과정' (190527 ~ 191108) 관련 python 프로그래밍 
 
 * 주요내용
