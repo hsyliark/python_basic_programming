@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 16 21:36:35 2019
-
-@author: HSY
-
-### 7/15~7/16 수업내용 정리
-"""
+### Unit 08~12
 
 korean = 92
 english = 47
