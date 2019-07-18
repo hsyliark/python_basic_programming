@@ -40,11 +40,63 @@ print(test_list)
 # (input에서 안내 문자열은 출력하지 않아야 합니다).
 # 여러 줄을 입력 받으려면 다음과 같이 for 반복문에서 input을 호출한 뒤 append로 각 줄을 추가하면 됩니다
 # (list 안에 문자열을 넣으면 문자열이 문자 리스트로 변환됩니다).
-matrix = []
-for i in range(row):
-    matrix.append(list(input()))
+# matrix = []
+# for i in range(row):
+#     matrix.append(list(input()))
 
+# col, row = map(int,input('가로, 세로 입력>').split())
+# matrix = []
+# for i in range(row):
+#     matrix.append(list(input()))
 
+import numpy as np
+col, row = 3, 3
+matrix = [['.','*','.'],
+          ['.','*','*'],
+          ['*','*','.']]
+answer = [[np.nan for i in range(col)] for k in range(row)]
+for i in range(col):
+    for k in range(row):
+        if matrix[i][k] == '.':
+            if 0 <= i-1 <= col-1 and 0 <= k-1 <= row-1:
+                side1 = matrix[i-1][k-1]
+            else:
+                side1 = ''
+            if 0 <= i-1 <= col-1 and 0 <= k <= row-1:
+                side2 = matrix[i-1][k]
+            else:
+                side2 = ''
+            if 0 <= i-1 <= col-1 and 0 <= k+1 <= row-1:
+                side3 = matrix[i-1][k+1]
+            else:
+                side3 = ''
+            if 0 <= i <= col-1 and 0 <= k-1 <= row-1:
+                side4 = matrix[i][k-1]
+            else:
+                side4 = ''
+            if 0 <= i <= col-1 and 0 <= k+1 <= row-1:
+                side5 = matrix[i][k+1]
+            else:
+                side5 = ''
+            if 0 <= i+1 <= col-1 and 0 <= k-1 <= row-1:
+                side6 = matrix[i+1][k-1]
+            else:
+                side6 = ''
+            if 0 <= i+1 <= col-1 and 0 <= k <= row-1:
+                side7 = matrix[i+1][k]
+            else:
+                side7 = ''
+            if 0 <= i+1 <= col-1 and 0 <= k+1 <= row-1:
+                side8 = matrix[i+1][k+1]
+            else:
+                side8 = ''
+            side = ''.join([side1,side2,side3,side4,
+                            side5,side6,side7,side8])
+            answer[i][k] = side.count('*')
+        else:
+            answer[i][k] = '*'
+from pprint import pprint
+pprint(answer,indent=6,width=20)
 
 
 
