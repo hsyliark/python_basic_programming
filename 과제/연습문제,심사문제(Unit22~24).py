@@ -44,16 +44,18 @@ print(test_list)
 # for i in range(row):
 #     matrix.append(list(input()))
 
-# col, row = map(int,input('가로, 세로 입력>').split())
-# matrix = []
-# for i in range(row):
-#     matrix.append(list(input()))
+col, row = map(int,input('가로, 세로 입력>').split())
+matrix = []
+for i in range(row):
+    matrix.append(list(input()))
 
 import numpy as np
-col, row = 3, 3
-matrix = [['.','*','.'],
-          ['.','*','*'],
-          ['*','*','.']]
+col, row = 5, 5
+matrix = [['.','.','*','.','.'],
+          ['.','.','.','*','.'],
+          ['.','*','.','.','.'],
+          ['.','*','*','*','.'],
+          ['*','.','*','.','.']]
 answer = [[np.nan for i in range(col)] for k in range(row)]
 for i in range(col):
     for k in range(row):
@@ -95,8 +97,10 @@ for i in range(col):
             answer[i][k] = side.count('*')
         else:
             answer[i][k] = '*'
-from pprint import pprint
-pprint(answer,indent=6,width=20)
+answer
+
+# from pprint import pprint
+# pprint(answer,indent=6,width=20)
 
 
 
@@ -141,6 +145,8 @@ x.count('the')
 # 이때 가격은 길이를 9로 만든 뒤 오른쪽으로 정렬하고 천단위로 ,(콤마)를 넣으세요.
 
 price = '51900;83000;158000;367500;250000;59200;128500;1304000'
+
+# Case1
 def my_price(price):
     price_1 = list(map(int, price.split(';')))
     for i in range(0, len(price_1) - 1):
@@ -149,6 +155,14 @@ def my_price(price):
                 price_1[i], price_1[k] = price_1[k], price_1[i]
     for j in range(len(price_1)):
         print('{0:>9,}'.format(price_1[j]))
+my_price(price)
+
+# Case2
+def my_price(price):
+    price_1 = list(map(int,price.split(';')))
+    price_1.sort(reverse=True)
+    for i in range(len(price_1)):
+        print('{0:>9,}'.format(price_1[i]))
 my_price(price)
 
 
