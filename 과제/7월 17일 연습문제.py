@@ -88,7 +88,7 @@ while True:
 
 import random as rd
 
-n = 30
+n = int.input()
 for i in range(n):
     A = rd.randint(1, 9)
     B = rd.randint(1, 9)
