@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac09938f-aeba-49a1-a045-0acff8b3fc1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/연습문제,심사문제(Unit22~24).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../7월 18일.py" beforeDir="false" afterPath="$PROJECT_DIR$/../7월 18일.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7월 17일 연습문제.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 17일 연습문제.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/연습문제,심사문제(Unit22~24).py" beforeDir="false" afterPath="$PROJECT_DIR$/연습문제,심사문제(Unit22~24).py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7월 17일 연습문제.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="480">
+              <caret line="56" column="19" lean-forward="true" selection-start-line="49" selection-end-line="56" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/연습문제,심사문제(Unit22~24).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="274">
+              <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -137,15 +135,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7월 17일 연습문제.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="480">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="49" selection-end-line="56" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/연습문제,심사문제(Unit22~24).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="274">
+          <caret line="92" column="46" lean-forward="true" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
         </state>
       </provider>
     </entry>
