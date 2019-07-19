@@ -76,12 +76,30 @@ with open(filename, 'r', encoding='UTF-8') as file:
 # 텍스트를 파일에서 읽은 후 단어의 개수를 세는 프로그램 Word Count를 작성하시오.
 # 입력은 텍스트 파일이고, 구분자는 마침표(‘.’), 쉽표(‘,’), 공백(‘ ’)이다.
 # 출력은 총 단어수와 가장 많이 나온 순서대로 단어 10개와 그 단어의 빈도이다.
-# 참고자료
-# import os
-# os.getcwd() # 현재 작업위치 출력
-# os.chdir("D:/Workplace_HSY/python_programming") # 작업위치 변경
-# os.mkdir("C:/Temp/Ex04/",2345) # 파일 만들기
-# os.listdir() # 파일 확인
+
+import string
+import os
+os.chdir("D:/Workplace/python_programming/과제")
+with open('words.txt','r') as file:
+    words = file.read()
+
+def WordCount(words):
+    words_split = words.split()
+    for i in range(len(words_split)):
+        words_split[i] = words_split[i].strip('\n').strip(string.punctuation).lower()
+    words_list = list(set(words_split))  # 중복없음
+    words_count = []
+    for j in words_list:
+        words_count.append((j,words_split.count(j)))
+    n = 0
+    for k in sorted(words_count, reverse=True):
+        print(k[0], ' ', ':', ' ', k[1])
+        n += 1
+        if n > 10:
+            break
+WordCount(words)
+
+os.chdir('D:/Workplace/python_programming/과제')
 
 
 
@@ -102,10 +120,12 @@ import random as rd
 level = ['low','mid','high']
 label = list(map(str,list(range(1,4))))
 base = "C:/Temp/Ex04/"
+
 for i in range(3):
     for k in range(3):
         path = base + level[i] + "/" + label[k]
         os.makedirs(path)
+
 for i in range(100):
     a = rd.randint(0,9999) # txt 파일 제목의 숫자
     b = rd.randint(1,3) # txt 파일 내용에 들어갈 숫자
@@ -124,7 +144,8 @@ for i in range(100):
         os.chdir(path)
         with open(str(a) + '.txt', 'w') as file:
             file.write(str(b))
-os.chdir('D:/Workplace_HSY/python_programming/과제')
+            
+os.chdir('D:/Workplace/python_programming/과제')
 
 
 
