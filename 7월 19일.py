@@ -262,8 +262,8 @@ a
 
 import os
 os.getcwd() # 현재 작업위치 출력
-os.chdir("D:\\Workplace_HSY\\python_programming") # 작업위치 변경
-os.mkdir("D:\\Temp\\Ex04") # 파일 만들기
+os.chdir("D:/Workplace_HSY/python_programming") # 작업위치 변경
+os.mkdir("C:/Temp/Ex04",2345) # 파일 만들기
 os.listdir() # 파일 확인
 
 file = open('hello.txt', 'w')    # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
