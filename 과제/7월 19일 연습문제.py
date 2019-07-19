@@ -108,7 +108,7 @@ for i in range(3):
         os.makedirs(path)
 for i in range(100):
     a = rd.randint(0,9999) # txt 파일 제목의 숫자
-    b = rd.randint(1,4) # txt 파일 내용에 들어갈 숫자
+    b = rd.randint(1,3) # txt 파일 내용에 들어갈 숫자
     if 0 <= a <= 3333:
         path = base + "low" + "/" + str(b)
         os.chdir(path)
