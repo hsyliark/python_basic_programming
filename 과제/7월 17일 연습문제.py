@@ -244,8 +244,156 @@ def difference(n):
     print(abs(sum2-sum1))
 difference(10)
 difference(20)
-    
-        
+
+
+
+
+
+
+
+
+
+### reference
+
+# 연도를 입력으로 받아 윤년인지 아닌지를 출력하는 프로그램을 작성하시오.
+# 윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다.
+year = int(input('연도 입력> '))
+if year % 4 == 0:
+    if year % 400 == 0:
+        print(year, '년은 윤년입니다.')
+    elif year % 100 == 0:
+        print(year, '년은 윤년이 아닙니다.')
+    else:
+        print(year, '년은 윤년입니다.')
+else:
+    print(year, '년은 윤년이 아닙니다.')
+
+# 45분 일찍 알람 맞추기
+hour, min = map(int, input('알람 시각> ').split())
+if min >= 45:
+    min -= 45
+else:
+    hour -= 1
+    min += 15          # min = min + 60 - 45
+print('New alarm time =', hour, min)
+
+# 세 정수 a, b, c를 입력으로 받아 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오
+a, b, c = map(int, input('정수 3개 입력> ').split())
+if a > b and a > c:
+    if b > c:
+        print(b)
+    else:
+        print(c)
+elif b > a and b > c:
+    if a > c:
+        print(a)
+    else:
+        print(c)
+else:
+    if a > b:
+        print(a)
+    else:
+        print(b)
+
+# a + b + c = 1000 인 피타고라스 수
+# (단, a < b < c 이고 a + b > c)
+outerBreak = False
+for a in range(1, 333):
+    if outerBreak:
+        break
+    for b in range(a+1, 500):
+        c = 1000 - a - b
+        if c < b:
+            continue
+        if a**2 + b**2 == c**2:
+            print(a, b, c, a+b+c)
+            print(a**2, b**2, c**2)
+            outerBreak = True
+            break;
+
+# 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램
+count = int(input('테스트 케이스의 개수> '))
+a, b = map(int, input('두 수 입력> ').split())
+for i in range(1, count+1):
+    print('Case #'+str(i)+':', a, '+', b, '=', a+b)
+
+# 5이상 9이하의 홀수를 입력받아 다이아몬드 형태의 별을 출력하는 프로그램
+n = int(input('5이상 9이하의 홀수> '))
+height = (n + 1) // 2
+for i in range(1, height+1):
+    for k in range(height-i):
+        print(' ', end='')
+    for k in range(i*2-1):
+        print('*', end='')
+    print()
+for i in reversed(range(1, height)):
+    for k in range(i, height):
+        print(' ', end='')
+    for k in range(i*2-1):
+        print('*', end='')
+    print()
+
+# 디지털 시계에 하루동안(00:00~23:59) 3이 표시되는 시간을 초로 환산하면
+# 총 몇 초(second) 인가?
+total = 0
+# for hour in range(24):
+#     if hour % 10 == 3:          # 3시, 13시, 23시
+#         total += 60 * 60;
+#     else:
+#         for min in range(60):
+#             if min // 10 == 3:  # 30분 ~ 39분
+#                 total += 60
+#             elif min % 10 == 3: # 3분, 13분, 23분, 43분, 53분
+#                 total += 60
+for hour in range(24):
+    for min in range(60):
+        time = str(hour) + str(min)
+        if '3' in time:
+            total += 60
+print(total)
+
+# 1~1000에서 각 숫자의 개수
+counts = [0] * 10
+for i in range(1, 10):
+    counts[i] += 1
+for i in range(10, 100):
+    counts[i // 10] += 1
+    counts[i % 10] += 1
+for i in range(100, 1000):
+    counts[i // 100] += 1
+    counts[(i % 100) // 10] += 1
+    counts[i % 10] += 1
+for i in range(1000, 1001):
+    counts[i // 1000] += 1
+    counts[(i % 1000) // 100] += 1
+    counts[(i % 100) // 10] += 1
+    counts[i % 10] += 1
+print(counts)
+
+# 자기 자신을 제외한 모든 양의 약수들의 합이 자기 자신이 되는 자연수
+def getDivisor(number):     # 자기 자신을 제외한 약수를 구하는 함수
+    result = list()
+    for i in range(1, number):
+        if number % i == 0:
+            result.append(i)
+    return result
+n = int(input('정수 입력> '))
+for i in range(1, n+1):
+    div = getDivisor(i)
+    if i == sum(div):
+        print(i)
+
+# 1부터 N까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이
+n = int(input('자연수 입력> '))
+sumOfSquare = 0
+sum = 0
+for i in range(1, n+1):
+    sum += i
+    sumOfSquare += i ** 2
+squareOfSum = sum ** 2
+print('합의 제곱 =', squareOfSum)
+print('제곱의 합 =', sumOfSquare)
+print('차이 =', squareOfSum - sumOfSquare)
 
 
 
