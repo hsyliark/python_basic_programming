@@ -144,7 +144,7 @@ for i in range(100):
         os.chdir(path)
         with open(str(a) + '.txt', 'w') as file:
             file.write(str(b))
-            
+
 os.chdir('D:/Workplace/python_programming/과제')
 
 
