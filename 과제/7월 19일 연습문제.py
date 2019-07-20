@@ -80,7 +80,7 @@ with open(filename, 'r', encoding='UTF-8') as file:
 import string
 import os
 os.chdir("D:/Workplace/python_programming/과제")
-with open('words.txt','r') as file:
+with open('wiki.txt','r') as file:
     words = file.read()
 
 def WordCount(words):
