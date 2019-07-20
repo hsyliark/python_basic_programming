@@ -85,12 +85,6 @@ with open('unit28.txt','r') as file:
     words = file.read()
 words_split = words.split('\n')
 for word in words_split:
-    for i in range(len(word)//2):
-        if word[i] == word[-1-i]:
-            print(word)
+    if list(word) == list(reversed(word)):
+        print(word)
 os.chdir("D:\Workplace\python_programming")
-
-
-
-
-

@@ -319,7 +319,7 @@ with open('james.p', 'wb') as file: # binary write mode
     pickle.dump(age, file)
     pickle.dump(address, file)
     pickle.dump(scores, file)
-with open('james.p', 'rb') as file: # binary write mode
+with open('james.p', 'rb') as file: # binary read mode
     name = pickle.load(file)
     age = pickle.load(file)
     address = pickle.load(file)
