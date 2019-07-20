@@ -157,24 +157,5 @@ os.chdir('D:/Workplace/python_programming/과제')
 # 00000000:  00 01 44 E4 00 01 64 E4  41 42 43 11 00 61 F4 E4  ..D...d. ABC..a..
 # 00000010:  41 42 63 13 00 62 F4 E5  00 01 46 E9 FF 01 65 E2  ABc..b.. ..F...e.
 # 00000020:
-# 참고자료
-# import pickle
-# name = 'james'
-# age = 17
-# address = '서울시 서초구 반포동'
-# scores = {'korean': 90, 'english': 95, 'mathematics': 85, 'science': 82}
-# with open('james.p', 'wb') as file:  # binary write mode
-#     pickle.dump(name, file)
-#     pickle.dump(age, file)
-#     pickle.dump(address, file)
-#     pickle.dump(scores, file)
-# with open('james.p', 'rb') as file:  # binary read mode
-#     name = pickle.load(file)
-#     age = pickle.load(file)
-#     address = pickle.load(file)
-#     scores = pickle.load(file)
-#     print(name)
-#     print(age)
-#     print(address)
-#     print(scores)
+
 

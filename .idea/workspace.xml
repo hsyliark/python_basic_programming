@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6603bea5-a3b2-4fb1-a881-2d091227733d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/7월 19일.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 19일.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/과제/7월 19일 연습문제.py" beforeDir="false" afterPath="$PROJECT_DIR$/과제/7월 19일 연습문제.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit25~28).py" beforeDir="false" afterPath="$PROJECT_DIR$/과제/심사문제(Unit25~28).py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/과제/7월 19일 연습문제.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="170" column="52" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
+            <state relative-caret-position="178">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
             </state>
           </provider>
         </entry>
@@ -42,8 +40,8 @@
       <list>
         <option value="$PROJECT_DIR$/과제/심사문제(Unit22~24).py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit25~28).py" />
-        <option value="$PROJECT_DIR$/과제/7월 19일 연습문제.py" />
         <option value="$PROJECT_DIR$/7월 19일.py" />
+        <option value="$PROJECT_DIR$/과제/7월 19일 연습문제.py" />
       </list>
     </option>
   </component>
@@ -167,8 +165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/과제/7월 19일 연습문제.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="170" column="52" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
+        <state relative-caret-position="178">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
         </state>
       </provider>
     </entry>
