@@ -40,10 +40,10 @@ print(a[1::2] + b[0::2])
 
 ### Unit 12
 
-key = list(map(str,input().split()))
-ability = list(map(float,input().split()))
-game = dict(zip(key,ability))
-print(game)
+key = map(str, input().split())
+value = map(float, input().split())
+ability = dict(zip(key,value))
+print(ability)
 
 
 
