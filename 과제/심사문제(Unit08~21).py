@@ -1,15 +1,6 @@
 ### Unit 08
 
-korean = 90
-english = 81
-mathematics = 86
-science = 80
-print(korean >= 90 and english > 80 and mathematics > 85 and science >= 80)
-
-korean = 90
-english = 80
-mathematics = 85
-science = 80
+korean, english, mathematics, science = map(int, input().split())
 print(korean >= 90 and english > 80 and mathematics > 85 and science >= 80)
 
 
@@ -192,21 +183,3 @@ star(5,150)
 star(6,100)
 
     
-    
-        
-        
-    
-
-    
-        
-    
-    
-    
-    
-
-
-    
-
-        
-    
-
