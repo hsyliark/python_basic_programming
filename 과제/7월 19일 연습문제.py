@@ -95,6 +95,7 @@ print(''.join(cypher))
 # 16:     public int number;
 
 # 모범답안
+# unix grep
 word, filename = input('찾고자 하는 문자열과 파일명> ').split()
 lineNo = 1
 with open(filename, 'r', encoding='UTF-8') as file:
@@ -188,20 +189,20 @@ for i in range(100):
     if 0 <= a <= 3333:
         path = base + "low" + "/" + str(b)
         os.chdir(path)
-        with open(str(a) + '.txt', 'w') as file:
+        with open('%04d.txt' % a, 'w') as file:
             file.write(str(b))
     elif 3334 <= a <= 6666:
         path = base + "mid" + "/" + str(b)
         os.chdir(path)
-        with open(str(a) + '.txt', 'w') as file:
+        with open('%04d.txt' % a, 'w') as file:
             file.write(str(b))
     else:
         path = base + "high" + "/" + str(b)
         os.chdir(path)
-        with open(str(a) + '.txt', 'w') as file:
+        with open('%04d.txt' % a, 'w') as file:
             file.write(str(b))
 
-os.chdir('D:/Workplace/python_programming/과제')
+os.chdir('D:/Workplace_HSY/python_programming')
 
 # 모범답안
 import os
@@ -238,6 +239,10 @@ for i in range(100):
 # 00000000:  00 01 44 E4 00 01 64 E4  41 42 43 11 00 61 F4 E4  ..D...d. ABC..a..
 # 00000010:  41 42 63 13 00 62 F4 E5  00 01 46 E9 FF 01 65 E2  ABc..b.. ..F...e.
 # 00000020:
+
+# 과정
+# 1. file에서 읽는 함수
+# 2. 16byte씩 출력하는 함수 (addr, data, size)
 
 # 모범답안
 import binascii as ba

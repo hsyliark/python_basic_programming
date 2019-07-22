@@ -54,9 +54,26 @@ def personal_info(**kwargs):
     if 'address' in kwargs:
         print('주소: ', kwargs['address'])
 
+# 고정 인수와 가변 인수(키워드 인수)를 함께 사용하기
 def personal_info(name, **kwargs):
     print(name)
     print(kwargs)
+personal_info('홍길동', age=30, address='서울시 용산구 이촌동')
+personal_info(**{'name': '홍길동', 'age': 30, 'address': '서울시 용산구 이촌동'})
+
+# 위치 인수와 키워드 인수를 함께 사용하기
+def custom_print(*args, **kwargs):
+    print(*args, **kwargs)
+custom_print(1, 2, 3, sep=':', end='')
+
+def personal_info(name, age, address='비공개'): # 초깃값 설정 변수는 뒤쪽에 몰아주기
+    print('이름: ', name)
+    print('나이: ', age)
+    print('주소: ', address)
+personal_info('홍길동', 30)
+personal_info('홍길동', 30, '서울시 용산구 이촌동')
+
+
 
 
 
