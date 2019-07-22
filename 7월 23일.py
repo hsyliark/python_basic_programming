@@ -74,6 +74,38 @@ personal_info('홍길동', 30)
 personal_info('홍길동', 30, '서울시 용산구 이촌동')
 
 
+## 재귀호출(recursive call)
+
+def hello():
+    print('Hello, world!')
+    hello()
+hello() # Recursion error
+
+def hello(count):
+    if count == 0:
+        return
+    print('Hello, world!',count)
+    count -= 1
+    hello(count)
+hello(5)
+
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+print(factorial(5))
+
+def is_palindrome(word):
+    if len(word) < 2:
+        return True
+    if word[0] != word[-1]:
+        return False
+    return is_palindrome(word[1:-1])
+print(is_palindrome('hello'))
+print(is_palindrome('level'))
+
+
+
 
 
 
