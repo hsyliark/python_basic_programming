@@ -167,5 +167,91 @@ for i in range(len(a) - 1):
 x
 
 
+## global variable
 
+x = 10
+def foo():
+    x = 20
+    print(x)
+foo()
+print(x)
+
+x = 10
+def foo():
+    global x # 전역변수 변경
+    x = 20
+    print(x)
+foo()
+print(x)
+
+x = 10
+locals()
+
+def foo():
+    x = 10
+    print(locals())
+foo()
+
+def print_hello():
+    hello = 'Hello, world!'
+    def print_message():
+        print(hello)
+    print_message()
+print_hello()
+
+def A():
+    x = 10
+    def B():
+        x = 20
+    B()
+    print(x)
+A() # 10
+
+def A():
+    x = 10
+    def B():
+        nonlocal x # 현재 함수의 바깥쪽에 있는 지역변수 사용
+        x = 20 # A의 지역변수 x에 20 할당
+    B()
+    print(x)
+A() # 20
+
+def A():
+    x = 10
+    y = 100
+    def B():
+        x = 20
+        def C():
+            nonlocal x # x = 20
+            nonlocal y # y = 100
+            x = x + 30
+            y = y + 300
+            print(x)
+            print(y)
+        C()
+    B()
+A() # 50, 400
+
+x = 1
+def A():
+    x = 10
+    def B():
+        x = 20
+        def C():
+            global x # 전역변수 x = 1 사용
+            x = x + 30
+            print(x)
+        C()
+    B()
+A() # 31
+
+# closure
+def calc():
+    a = 3
+    b = 5
+    def mul_add(x):
+        return a * x + b
+    return mul_add
+c = calc()
+print(c(1),c(2),c(3),c(4),c(5))
 
