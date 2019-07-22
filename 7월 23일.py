@@ -1,4 +1,4 @@
-### Unit 30~31
+### Unit 30~32
 
 def print_numbers(a, b, c):
     print(a)
@@ -105,10 +105,66 @@ print(is_palindrome('hello'))
 print(is_palindrome('level'))
 
 
+## 익명함수 (lambda expression)
 
+def plus_ten(x):
+    return x + 10
+plus_ten(1)
+lambda x: x + 10
 
+plus_ten = lambda x: x + 10
+plus_ten(2)
 
+(lambda x: x + 10)(1)
+(lambda x: y = 10; x + y)(1) # error
+y = 10
+(lambda x: x + y)(1)
 
+def plus_ten(x):
+    return x + 10
+list(map(plus_ten, [1,2,3]))
+list(map(lambda x: x + 10, [1,2,3]))
+
+# map, filter, reduce
+a = list(range(1,11))
+list(map(lambda x: str(x) if x % 3 == 0 else x, a)) # 반드시 else 구문 추가
+list(map(lambda x: str(x) if x % 3 == 0, a)) # error
+list(map(lambda x: str(x) if x == 1 else float(x) if x == 2 else x + 10, a))
+def f(x):
+    if x == 1:
+        return str(x)
+    elif x == 2:
+        return float(x)
+    else:
+        return x + 10
+list(map(f, a))
+
+a = [1,2,3,4,5]
+b = [2,4,6,8,10]
+list(map(lambda x, y: x * y, a, b))
+
+def f(x):
+    return x > 5 and x < 10
+a = [8,3,2,10,15,7,1,9,0,11]
+list(filter(f, a))
+a = [8,3,2,10,15,7,1,9,0,11]
+list(filter(lambda x: x > 5 and x < 10, a))
+a = [8,3,2,10,15,7,1,9,0,11]
+[i for i in a if i > 5 and i < 10]
+
+def f(x, y):
+    return x + y
+a = [1,2,3,4,5]
+from functools import reduce
+a = [1,2,3,4,5]
+reduce(f, a)
+a = [1,2,3,4,5]
+reduce(lambda x, y: x + y, a)
+a = [1,2,3,4,5]
+x = a[0]
+for i in range(len(a) - 1):
+    x = x + a[i + 1]
+x
 
 
 
