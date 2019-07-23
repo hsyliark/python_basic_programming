@@ -27,18 +27,14 @@ x.tibbers()
 # 정답에 코드를 작성할 때는 class Time:에 맞춰서 들여쓰기를 해주세요.
 
 class Time:
-    def __init__(self, hour, minute, second):
-        self.hour = hour
-        self.minute = minute
-        self.second = second
-    @ staticmethod
-    def from_string(time_string):
+    @staticmethod
+    def is_time_valid(time_string):
         hour, minute, second = map(int, time_string.split(':'))
-        return hour, minute, second
-    @ staticmethod
-    def is_time_valid(hour, minute, second):
         return hour <= 24 and minute <= 59 and second <= 60
-
+    class from_string:
+        def __init__(self, time_string):
+            self.time_string = time_string
+        hour, minute, second = map(int, time_string.split(':'))
 
 time_string = input()
 

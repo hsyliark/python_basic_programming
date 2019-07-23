@@ -50,12 +50,8 @@ def fib(n):
         return 0
     if n == 1:
         return 1
-    count = 1
-    prog = [0,1]
-    for i in range(2,n+1):
-        prog.append(prog[i-2]+prog[i-1])
-        count += 1
-    return prog[n]
+    if n >= 2:
+       return fib(n-1) + fib(n-2)
 n = int(input())
 print(fib(n))
 
