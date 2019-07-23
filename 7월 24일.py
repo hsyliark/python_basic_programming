@@ -1,8 +1,8 @@
-### Unit 34
+### Unit 34~35
 
 ## class
 
-class Person:
+class Person: # class 이름은 보통 대문자로 시작함
     def greeting(self):
         print('Hello')
 james = Person()
@@ -16,7 +16,7 @@ b
 c = dict(x=10, y=20)
 c
 
-# example of mathod
+# example of method
 b = list(range(10))
 b.append(20)
 b
@@ -158,7 +158,92 @@ james = Person()
 james.__greeting()  # 에러: 클래스 바깥에서는 비공개 메서드를 호출할 수 없음
 
 
-### Unit 35
+class Person:
+    bag = []
+    def put_bag(self, stuff):
+        self.bag.append(stuff)
+james = Person()
+james.put_bag('책')
+maria = Person()
+maria.put_bag('열쇠')
+print(james.bag)
+print(maria.bag)
+
+class Person:
+    bag = []
+    def put_bag(self, stuff):
+        Person.bag.append(stuff)
+print(Person.bag)
+
+james.__dict__
+Person.__dict__
+
+class Person:
+    def __init__(self):
+        self.bag = []
+    def put_bag(self, stuff):
+        self.bag.append(stuff)
+james = Person()
+james.put_bag('책')
+maria = Person()
+maria.put_bag('열쇠')
+print(james.bag)
+print(maria.bag)
+
+class Knight:
+    __item_limit = 10
+    def print_item_limit(self):
+        print(Knight.__item_limit) # class 안에서만 접근 가능
+x = Knight()
+x.print_item_limit()
+print(Knight.__item_limit) # class 바깥에서는 접근 불가능
+
+# docstring
+class Person:
+    '''사람 클래스입니다.'''
+    def greeting(self):
+        '''인사 메서드입니다.'''
+        print('Hello')
+print(Person.__doc__)  # 사람 클래스입니다.
+print(Person.greeting.__doc__)  # 인사 메서드입니다.
+maria = Person()
+print(maria.greeting.__doc__)  # 인사 메서드입니다.
+
+# 정적 method
+class Calc:
+    @staticmethod # 정적 method
+    def add(a, b):
+        print(a + b)
+    @staticmethod  # 정적 method
+    def mul(a, b):
+        print(a * b)
+Calc.add(10, 20)
+Calc.mul(10, 20)
+
+# 클래스 method
+class Person:
+    count = 0 # 클래스 속성
+    def __init__(self):
+        Person.count += 1 # 인스턴스가 만들어질 때 클래스 속성 count에 1을 더함.
+    @classmethod
+    def print_count(cls):
+        print('{0}명 생성되었습니다.'.format(cls.count)) # cls로 클래스 속성에 접근
+james = Person()
+maria = Person()
+Person.print_count() # 2명 생성되었습니다.
+
+
+# inheritance
+class Person:
+    def greeting(self):
+        print('안녕하세요.')
+class Student(Person):
+    def study(self):
+        print('공부하기')
+james = Student()
+james.greeting() # 안녕하세요. : 기반 클래스 Person의 method 호출
+james.study() # 공부하기 : 파생 클래스 Student에 추가한 study method
+
 
 
 
