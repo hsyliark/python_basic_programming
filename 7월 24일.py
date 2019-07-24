@@ -1,4 +1,4 @@
-### Unit 34~36
+### Unit 34~37
 
 ## class
 
@@ -284,6 +284,154 @@ class Student(Person):
 james = Student()
 print(james.school)
 print(james.hello)
+
+class Person:
+    def __init__(self):
+        print('Person __init__')
+        self.hello = '안녕하세요.'
+class Student(Person):
+    pass
+james = Student()
+print(james.hello)
+
+class Student(Person):
+    def __init__(self):
+        print('Student __init__')
+        super(Student, self).__init__()
+        self.school = '파이썬 코딩 도장'
+
+# overriding
+class Person:
+    def greeting(self):
+        print('안녕하세요.')
+class Student(Person):
+    def greeting(self):
+        print('안녕하세요. 저는 파이썬 코딩 도장 학생입니다.')
+james = Student()
+james.greeting()
+
+class Person:
+    def greeting(self):
+        print('안녕하세요.')
+class Student(Person):
+    def greeting(self):
+        super().greeting() # 기반 클래스의 method를 호출하여 중복을 줄임
+        print('저는 파이썬 코딩 도장 학생입니다.')
+james = Student()
+james.greeting()
+
+class Person:
+    def greeting(self):
+        print('안녕하세요.')
+class University:
+    def manage_credit(self):
+        print('학점 관리')
+class Undergraduate(Person, University):
+    def study(self):
+        print('공부하기')
+james = Undergraduate()
+james.greeting()
+james.manage_credit()
+james.study()
+
+# diamond inheritance (비추천) -> # Method Resolution Order
+class A:
+    def greeting(self):
+        print('안녕하세요. A입니다.')
+class B(A):
+    def greeting(self):
+        print('안녕하세요. B입니다.')
+class C(A):
+    def greeting(self):
+        print('안녕하세요. C입니다.')
+class D(B, C):
+    pass
+x = D()
+x.greeting()  # 안녕하세요. B입니다.
+D.mro()
+
+# object class
+int.mro()
+class X:
+    pass
+class X(object):
+    pass
+
+# abstract class : 상속받는 클래스에서 메서드 구현 강제
+from abc import *
+class StudentBase(metaclass=ABCMeta):
+    @abstractmethod
+    def study(self):
+        pass
+    @abstractmethod
+    def go_to_school(self):
+        pass
+class Student(StudentBase):
+    def study(self):
+        print('공부하기')
+james = Student()
+james.study() # error
+
+from abc import *
+class StudentBase(metaclass=ABCMeta):
+    @abstractmethod
+    def study(self):
+        pass
+    @abstractmethod
+    def go_to_school(self):
+        pass
+class Student(StudentBase):
+    def study(self):
+        print('공부하기')
+    def go_to_school(self):
+        print('학교가기')
+james = Student()
+james.study()
+james.go_to_school()
+james = StudentBase() # error
+
+class AdvancedList(list):
+    def replace(self, old, new):
+        while old in self:
+            self[self.index(old)] = new
+x = AdvancedList([1, 2, 3, 1, 2, 3, 1, 2, 3])
+x.replace(1, 100)
+print(x)
+
+
+## 두 점 사이의 거리 구하기
+
+import math
+class Point2D:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+p1 = Point2D(x=30, y=20)
+p2 = Point2D(x=60, y=50)
+print('p1: {} {}'.format(p1.x, p1.y))
+print('p2: {} {}'.format(p2.x, p2.y))
+a = p2.x - p1.x
+b = p2.y - p1.y
+c = math.sqrt(a**2 + b**2)
+print(c)
+
+import math
+import collections
+Point2D = collections.namedtuple('Point2D', ['x', 'y'])
+p1 = Point2D(x=30, y=20)
+p2 = Point2D(x=60, y=50)
+a = p2.x - p1.x
+b = p2.y - p1.y
+c = math.sqrt(math.pow(a,2)+math.pow(a,2))
+print(c)
+
+
+
+
+
+
+
+
 
 
 
