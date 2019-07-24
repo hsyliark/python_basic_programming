@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="728dc623-bb7d-4c9a-be35-00a24af171e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7월 24일.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 24일.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit34~35).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7월 25일.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 25일.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit34~37).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit38~39).py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,33 +17,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7월 24일.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-9432">
               <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~37).py">
+        <entry file="file://$PROJECT_DIR$/7월 25일.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="84" column="90" selection-start-line="84" selection-start-column="90" selection-end-line="84" selection-end-column="90" />
+            <state relative-caret-position="1290">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7월 25일.py">
+        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~39).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="178">
+              <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit38~39).py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit29~33).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -68,6 +72,8 @@
         <option value="$PROJECT_DIR$/과제/심사문제(Unit34~37).py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit38~41).py" />
         <option value="$PROJECT_DIR$/7월 25일.py" />
+        <option value="$PROJECT_DIR$/과제/심사문제(Unit34~38).py" />
+        <option value="$PROJECT_DIR$/과제/심사문제(Unit34~39).py" />
       </list>
     </option>
   </component>
@@ -194,13 +200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit29~33).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~35).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -222,16 +221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7월 24일.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit38~39).py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~37).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -239,10 +228,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit38~39).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7월 24일.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9432">
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~38).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/7월 25일.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="1290">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit29~33).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~39).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -88,3 +88,65 @@ for i in range(0,3):
 print(length)
 
 
+
+## Unit 38
+# 표준 입력으로 문자열이 입력됩니다.
+# 다음 소스 코드를 완성하여 입력된 문자열이 회문이면 문자열을 그대로 출력하고,
+# 회문이 아니면 '회문이 아닙니다.'를 출력하도록 만드세요.
+# palindrome 함수와 NotPalindromeError 예외를 작성해야 합니다.
+
+class NotPalindromeError(Exception):
+    def __init__(self):
+        super().__init__('회문이 아닙니다.')
+def palindrome(word):
+    if list(word) != list(reversed(word)):
+        raise NotPalindromeError
+    else:
+        print(word)
+
+try:
+    word = input()
+    palindrome(word)
+except NotPalindromeError as e:
+    print(e)
+
+
+
+## Unit 39
+# 표준 입력으로 정수 세 개가 입력됩니다
+# (첫 번째 정수는 시작하는 초, 두 번째 정수는 반복을 끝낼 초,
+# 세 번째 정수는 인덱스이며 입력되는 초의 범위는 0~100000,
+# 입력되는 인덱스의 범위는 0~10입니다).
+# 다음 소스 코드에서 시간 값을 생성하는 이터레이터를 만드세요.
+# 1) 시간 값은 문자열이고 시:분:초 형식입니다.
+# 만약 숫자가 한 자리일 경우 앞에 0을 붙입니다(예: 12:01:08).
+# 2) 1초는 00:00:01입니다.
+# 23:59:59를 넘길 경우 00:00:00부터 다시 시작해야 합니다.
+# 3) 시간은 반복을 끝낼 초 직전까지만 출력해야 합니다
+# (반복을 끝낼 초는 포함되지 않음).
+
+class TimeIterator:
+    def __init__(self, start, stop):
+        self.start = start
+        self.stop = stop
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.start < self.stop:
+            if self.start < 86400:
+                r = self.start
+            else:
+                r = self.start - 86399
+            minute, second = divmod(r, 60)
+            hour, minute = divmod(minute, 60)
+            self.start += 1
+            return '%02d' % hour + ':' + '%02d' % minute + ':' + '%02d' % second
+        else:
+            raise StopIteration
+
+start, stop, index = map(int, input().split())
+
+for i in TimeIterator(start, stop):
+    print(i)
+
+print('\n', TimeIterator(start, stop)[index], sep='')
