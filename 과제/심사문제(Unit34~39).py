@@ -129,14 +129,12 @@ class TimeIterator:
     def __init__(self, start, stop):
         self.start = start
         self.stop = stop
-    def __iter__(self):
-        return self
-    def __next__(self):
+    def __getitem__(self, index):
         if self.start < self.stop:
             if self.start < 86400:
                 r = self.start
             else:
-                r = self.start - 86399
+                r = self.start - 86400
             minute, second = divmod(r, 60)
             hour, minute = divmod(minute, 60)
             self.start += 1
@@ -145,8 +143,30 @@ class TimeIterator:
             raise StopIteration
 
 start, stop, index = map(int, input().split())
-
 for i in TimeIterator(start, stop):
     print(i)
+print('\n', TimeIterator(start, stop)[index], sep='')  # no error : index로 접근 가능
 
-print('\n', TimeIterator(start, stop)[index], sep='')
+class TimeIterator:
+    def __init__(self, start, stop):
+        self.start = start
+        self.stop = stop
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.start < self.stop:
+            if self.start < 86400:
+                r = self.start
+            else:
+                r = self.start - 86400
+            minute, second = divmod(r, 60)
+            hour, minute = divmod(minute, 60)
+            self.start += 1
+            return '%02d' % hour + ':' + '%02d' % minute + ':' + '%02d' % second
+        else:
+            raise StopIteration
+
+start, stop, index = map(int, input().split())
+for i in TimeIterator(start, stop):
+    print(i)
+print('\n', TimeIterator(start, stop)[index], sep='') # error : index로 접근 불가능

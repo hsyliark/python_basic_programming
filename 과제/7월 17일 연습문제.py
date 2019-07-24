@@ -234,6 +234,7 @@ for i in range(1,N+1):
 # 따라서 1부터 10까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 3025 - 385 = 2640 이 된다.
 # 입력으로 자연수 N을 받아, 1부터 N까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 얼마인가?
 
+n = int(input())
 def difference(n):
     sum1 = 0
     sum2_1 = 0
@@ -242,8 +243,8 @@ def difference(n):
         sum2_1 += i
     sum2 = sum2_1**2
     print(abs(sum2-sum1))
-difference(10)
-difference(20)
+difference(n)
+
 
 
 
