@@ -91,5 +91,15 @@ x = co.send(2)  # number_coroutine으로 2를 보냄
 print(x)  # 2: number_coroutine의 yield에서 바깥으로 전달한 값
 co.send(3)  # 3을 보내서 반환값을 출력하도록 만듬
 
-
+def find(word):
+    result = False
+    while True:
+        line = (yield result)
+        result = word in line
+f = find('Python')
+next(f)
+print(f.send('Hello, Python!'))
+print(f.send('Hello, world!'))
+print(f.send('Python Script'))
+f.close()
 
