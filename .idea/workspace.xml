@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="728dc623-bb7d-4c9a-be35-00a24af171e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/7월 26일.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/과제/심사문제(Unit40).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit34~39).py" beforeDir="false" afterPath="$PROJECT_DIR$/과제/심사문제(Unit34~39).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/시험/황성윤.py" beforeDir="false" afterPath="$PROJECT_DIR$/시험/황성윤.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7월 25일.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 25일.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7월 26일.py" beforeDir="false" afterPath="$PROJECT_DIR$/7월 26일.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit34~39).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/과제/심사문제(Unit40).py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~39).py">
+        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~40).py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7월 25일.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="653">
+              <caret line="217" column="48" selection-start-line="217" selection-start-column="48" selection-end-line="217" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -28,15 +32,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/7월 26일.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="264">
+              <caret line="86" column="8" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit40).py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -67,17 +66,17 @@
         <option value="$PROJECT_DIR$/7월 24일.py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit34~37).py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit38~41).py" />
-        <option value="$PROJECT_DIR$/7월 25일.py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit34~38).py" />
         <option value="$PROJECT_DIR$/과제/7월 17일 연습문제.py" />
-        <option value="$PROJECT_DIR$/과제/심사문제(Unit40).py" />
         <option value="$PROJECT_DIR$/시험/황성윤.py" />
+        <option value="$PROJECT_DIR$/과제/심사문제(Unit40).py" />
+        <option value="$PROJECT_DIR$/7월 25일.py" />
         <option value="$PROJECT_DIR$/과제/심사문제(Unit34~39).py" />
         <option value="$PROJECT_DIR$/7월 26일.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="4" />
     <option name="width" value="1152" />
     <option name="height" value="1040" />
@@ -98,6 +97,11 @@
               <item name="python_programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_programming" type="462c0819:PsiDirectoryNode" />
               <item name="과제" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_programming" type="462c0819:PsiDirectoryNode" />
+              <item name="시험" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -138,7 +142,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21074815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12697576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -151,13 +155,13 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3347779" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21095152" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -170,7 +174,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3351709" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3347779" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -249,40 +253,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7월 25일.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3384">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/7월 17일.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/황성윤.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/시험/황성윤.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1430">
-          <caret line="87" column="9" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
           <folding>
-            <element signature="e#1325#1344#0" expanded="true" />
+            <element signature="e#1332#1351#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~39).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="845">
+          <caret line="195" column="21" selection-start-line="195" selection-start-column="21" selection-end-line="195" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit40).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/과제/심사문제(Unit34~40).py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7월 25일.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="217" column="48" selection-start-line="217" selection-start-column="48" selection-end-line="217" selection-end-column="48" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/7월 26일.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="264">
+          <caret line="86" column="8" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
         </state>
       </provider>
     </entry>
