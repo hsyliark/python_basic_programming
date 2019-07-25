@@ -27,7 +27,6 @@ x.tibbers()
 # 정답에 코드를 작성할 때는 class Time:에 맞춰서 들여쓰기를 해주세요.
 
 time_string = input()
-
 class Time:
     @staticmethod
     def is_time_valid(time_string):
@@ -37,7 +36,6 @@ class Time:
         def __init__(self, time_string):
             self.time_string = time_string
         hour, minute, second = map(int, time_string.split(':'))
-
 if Time.is_time_valid(time_string):
     t = Time.From_string(time_string)
     print(t.hour, t.minute, t.second)
@@ -59,8 +57,7 @@ class Wing:
         print('파닥거리다')
 class Bird(Animal, Wing):
     def fly(self):
-        print('날다'
-
+        print('날다')
 b = Bird()
 b.eat()
 b.flap()
@@ -103,7 +100,6 @@ def palindrome(word):
         raise NotPalindromeError
     else:
         print(word)
-
 try:
     word = input()
     palindrome(word)
@@ -141,7 +137,6 @@ class TimeIterator:
             return '%02d' % hour + ':' + '%02d' % minute + ':' + '%02d' % second
         else:
             raise StopIteration
-
 start, stop, index = map(int, input().split())
 for i in TimeIterator(start, stop):
     print(i)
@@ -165,7 +160,6 @@ class TimeIterator:
             return '%02d' % hour + ':' + '%02d' % minute + ':' + '%02d' % second
         else:
             raise StopIteration
-
 start, stop, index = map(int, input().split())
 for i in TimeIterator(start, stop):
     print(i)
