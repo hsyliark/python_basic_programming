@@ -1,6 +1,6 @@
 # python_basic_programming
 
-## Basic python programming  
+## Basic python programming   
 
 ### 코드출처 : https://github.com/namjaeyoon, 파이썬 코딩 도장 https://dojang.io
 
